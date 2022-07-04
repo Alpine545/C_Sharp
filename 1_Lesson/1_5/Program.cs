@@ -1,9 +1,6 @@
 ﻿int N = int.Parse(Console.ReadLine());
-if (N<=0)
+if (N<0)
 {
-    Console.WriteLine(N*(-1));
+    N = -N;
 }
-else
-{
     Console.WriteLine(N);
-}
