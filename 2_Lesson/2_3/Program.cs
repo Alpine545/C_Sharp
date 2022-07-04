@@ -2,4 +2,4 @@
 int y = int.Parse(Console.ReadLine());
 
 if (x % y == 0) Console.WriteLine ("Кратно");
-else Console.WriteLine (x % y);
+else Console.WriteLine ($"Остаток от деления {x % y}");
