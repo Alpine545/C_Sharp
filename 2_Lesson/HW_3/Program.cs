@@ -3,8 +3,16 @@
 //while (x>999) x = x/10;
 //Console.WriteLine(x % 10);
 
-int Numbers (int x);
+void Numbers (int x)
 {
-    return x/10 % 10;
+    if (x < 100) 
+    {
+        Console.WriteLine("Does not exist");
+        return;
+    }
+    
+    while (x>999) x = x/10;
+    Console.WriteLine (x % 10);
+    
 }
-Console.ReadLine();
+Numbers (int.Parse(Console.ReadLine()));

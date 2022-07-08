@@ -1,16 +1,14 @@
-﻿void NumberOne(int x, int y)
+﻿void OneOfNum(int num_1, int num_2)
 {
-   if (x % y == 0)
-   {
-   Console.WriteLine("Кратно");
-   }
-   else 
-   {
-   Console.WriteLine(x % y);
-   }
+if (num_1 % num_2 == 0)
+{
+Console.WriteLine($"{num_1}, {num_2} -> multiple");
+}
+else
+{
+Console.WriteLine($"{num_1}, {num_2} -> not multiple, the remainder {num_1 % num_2}");
+}
 }
 
-int x = int.Parse(Console.ReadLine());
-int y = int.Parse(Console.ReadLine());
-
-Console.WriteLine(NumberOne);
+OneOfNum(16, 4);
+OneOfNum(22, 4);
